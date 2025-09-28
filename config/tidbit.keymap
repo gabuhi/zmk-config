@@ -19,6 +19,9 @@
 &encoder_1 {
     status = "okay";
 };
+&encoder_1_top_left {
+    status = "okay";
+};
 */
 
 /*
@@ -38,7 +41,7 @@
 /* Add any encoder(s) you have enabled to the sensors node, separated by spaces. */
 &sensors {
     compatible = "zmk,keymap-sensors";
-    sensors = <&encoder_1>;
+    sensors = <&encoder_1 &encoder_1_top_left>;
 };
 
 / {
