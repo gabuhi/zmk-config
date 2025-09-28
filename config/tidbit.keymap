@@ -16,24 +16,9 @@
 &encoder_1_top_row {
     status = "okay";
 };
-*/
-
-/*
-&encoder_2 {
-    status = "disabled";
-};
-
-&encoder_3 {
-    status = "disabled";
-};
-*/
-
-&encoder_4 {
-    status = "disabled";
-};
 
     sensors = <&encoder_1_top_row>;
-    triggers-per-rotation = <20>
+    triggers-per-rotation = <20>;
 };
 
 / {
