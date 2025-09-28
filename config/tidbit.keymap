@@ -15,11 +15,11 @@
 
 
 };
-&encoder_1_top_left {
+&encoder_1 {
     status = "okay";
 
 &sensors {
-    sensors = <&encoder_1_top_left>;
+    sensors = <&encoder_1>;
 };
 
 / {
