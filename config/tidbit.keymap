@@ -13,12 +13,16 @@
     cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 };
 
+/* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
+/*
+
 &encoder_1_top_row {
     status = "okay";
 };
 
+/* Add any encoder(s) you have enabled to the sensors node, separated by spaces. */
+&sensors {
     sensors = <&encoder_1_top_row>;
-    triggers-per-rotation = <20>;
 };
 
 / {
