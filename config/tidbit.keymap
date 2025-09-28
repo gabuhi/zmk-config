@@ -40,7 +40,7 @@
 
 /* Add any encoder(s) you have enabled to the sensors node, separated by spaces. */
 &sensors {
-    sensors = <&encoder_1>;
+    sensors = <&encoder_1 &encoder_1_top_left>;
 };
 
 / {
@@ -63,7 +63,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Default Layer";
+            display-name = "Procreate";
             bindings = <
                                 &mo 1  &scrnsht &kp LG(TAB)
                 &kp V &kp LG(RBKT) &kp LG(LBKT) &kp LG(V)
@@ -76,7 +76,7 @@
         };
 
          func_layer {
-             display-name = "Func Layer";
+             display-name = "func";
              bindings = <
                                 &none           &sys_reset      &bootloader
                 &out OUT_TOG    &bt BT_NXT    &bt BT_PRV    &none
