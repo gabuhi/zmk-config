@@ -15,9 +15,7 @@
 
 /* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
 /*
-&encoder_1 {
-    status = "okay";
-};
+
 &encoder_1_top_left {
     status = "okay";
 };
