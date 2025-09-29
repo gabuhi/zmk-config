@@ -13,11 +13,15 @@
     cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 };
 
+&encoder_1_top_row {
+    status = "okay";
+};
+
 /* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
 /*
 
 &encoder_1 {
-    status = "disabled";
+    status = "okay";
 };
 &encoder_1_top_row {
     status = "okay";
@@ -63,7 +67,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Procreate";
+            display-name = "kero";
             bindings = <
                                 &mo 1  &scrnsht &kp LG(TAB)
                 &kp V &kp LG(RBKT) &kp LG(LBKT) &kp LG(V)
