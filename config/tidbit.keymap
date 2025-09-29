@@ -76,7 +76,7 @@
                 &kp SPACE  &kp B  &kp S     &kp LALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>;
         };
 
          func_layer {
