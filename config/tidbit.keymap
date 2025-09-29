@@ -13,6 +13,11 @@
     cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
 };
 
+&encoder_1_top_row: encoder_1_top_row {
+        a-gpios = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+};
+
 /* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
 /*
 
