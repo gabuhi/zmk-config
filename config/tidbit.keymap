@@ -17,9 +17,35 @@
     status = "okay";
 };
 
+/* Enable ONLY ONE of the &encoder_1 nodes. They are wired to the same pins.*/
+/*
+
+&encoder_1 {
+    status = "okay";
+};
+&encoder_1_top_row {
+    status = "okay";
+};
+*/
+
+/*
+&encoder_2 {
+    status = "okay";
+};
+
+&encoder_3 {
+    status = "okay";
+};
+*/
+
+&encoder_4 {
+    status = "okay";
+};
+
+/* Add any encoder(s) you have enabled to the sensors node, separated by spaces. */
 &sensors {
     sensors = <&encoder_1_top_row>;
-    triggers-per-rotation = 20
+    triggers-per-rotation = <20>;
 };
 
 / {
