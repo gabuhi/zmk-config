@@ -20,8 +20,6 @@
     status = "disabled";
 };
 &encoder_1_top_row {
-    a-gpios = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     status = "okay";
 };
 */
@@ -74,7 +72,7 @@
                 &kp SPACE  &kp B  &kp S     &kp LALT
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
          func_layer {
@@ -87,7 +85,7 @@
                 &bt BT_CLR      &none           &none           &none
              >;
 
-             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
     };
 };
